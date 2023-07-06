@@ -1,0 +1,24 @@
+/* Setup */
+@import 'setup/vars.css';
+@import 'setup/typography.css';
+
+/* Base */
+@import 'base/base.css';
+@import 'base/helpers.css';
+@import 'base/layout.css';
+@import 'base/forms.css';
+
+/*Components */
+@import 'cmps/HomePage.css';
+@import 'cmps/AppHeader.css';
+@import 'cmps/UserMsg.css';
+
+@import 'apps/mail/app.css';
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}

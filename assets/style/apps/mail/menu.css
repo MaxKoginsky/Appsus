@@ -1,0 +1,59 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.mail-menu {
+    min-width: 200px;
+}
+
+.menu .menu-compose {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+
+.menu .menu-compose p {
+    margin: 0;
+}
+
+.menu .menu-tab {
+    display: flex;
+}
+
+.menu .menu-tab p {
+    margin: 0 0 0 10px;
+}
+
+.menu button {
+    width: 50%;
+    margin: 10px 0 0 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #b4e3fc;
+}
+
+.menu button:hover {
+    box-shadow: 2px 2px 5px grey;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 8px;
+    margin-right: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.menu ul li:hover {
+    background-color: lightgray;
+}
+
+.menu .btn-close {
+    display: none;
+}
+

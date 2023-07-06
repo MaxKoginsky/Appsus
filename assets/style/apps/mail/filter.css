@@ -1,0 +1,46 @@
+
+.menu-filter .menu-top {
+    display: flex;
+    padding: 10px;
+}
+
+.menu-filter .menu-header{
+    height: 50px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 10px 20px;
+}
+
+.menu-filter .menu-header .gmail-logo{
+    height: 25px;
+    width: 30px;
+}
+
+.menu-filter .search .search-icon {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding-left: 1rem;
+    z-index: 1;
+}
+
+.menu-filter .search .search-input {
+    height: 50px;
+    width: 50vw;
+    position: relative;
+    padding-left: 4rem;
+    background-color: #c4d8ff3d;
+    border: none;
+    border-radius: 25px;
+}
+
+.menu-filter .search .search-input:focus-visible {
+    outline: none;
+    background-color: white;
+    box-shadow: 1px 1px 6px grey;
+}
+
