@@ -1,0 +1,90 @@
+.new-mail {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.2s;
+  z-index: 10;
+  box-shadow: 1px 0px 20px grey;
+}
+.modal-open {
+    position: fixed;
+    right: 5px;
+    bottom: 60px
+}
+.modal-close {
+  position: fixed;
+  right: 0;
+  bottom: -100%;
+}
+.new-mail .title {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cfdcf63d;
+  padding: 15px;
+}
+.new-mail .title .close-btn {
+  height: fit-content;
+  width: fit-content;
+  margin: auto 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: cursive;
+  color: #505050;
+  background-color: transparent;
+  border: none;
+}
+
+.new-mail .mail-to {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.new-mail .mail-input {
+  border: none;
+  width: -webkit-fill-available;
+}
+
+.new-mail .mail-input:focus-visible {
+  outline: none;
+  border: none;
+}
+
+.new-mail hr {
+  margin: 0 auto;
+  width: 95%;
+  justify-self: center;
+  display: flex;
+  border: 0.1px solid #e6ecf8;
+}
+
+.new-mail .mail-body {
+  height: -webkit-fill-available;
+  resize: none;
+  border: none;
+  padding: 10px;
+}
+
+.new-mail .mail-body:focus-visible {
+  outline: none;
+  border: none;
+}
+
+.new-mail .send-btn {
+  width: 70px;
+  margin: 10px;
+  background-color: #1056cd;
+  color: white;
+  border: none;
+  border-radius: 25px;
+}
+
+.new-mail .send-btn:hover {
+  box-shadow: 3px 3px 6px lightblue;
+  background-color: #2265d8;
+}

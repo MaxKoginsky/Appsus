@@ -46,7 +46,7 @@ function _createMails() {
     utilService.saveToStorage(MAIL_KEY, mails)
   }
 
-  if(!selectedTab) {
+  if (!selectedTab) {
     selectedTab = 'Inbox'
     utilService.saveToStorage(MENU_SELECTED_TAB_KEY, selectedTab)
   }
@@ -55,11 +55,11 @@ function _createMails() {
 }
 
 function getSelectedTab() {
-    return utilService.loadFromStorage(MENU_SELECTED_TAB_KEY)
+  return utilService.loadFromStorage(MENU_SELECTED_TAB_KEY)
 }
 
 function setSelectedTab(selectedTab) {
-    utilService.saveToStorage(MENU_SELECTED_TAB_KEY, selectedTab)
+  utilService.saveToStorage(MENU_SELECTED_TAB_KEY, selectedTab)
 }
 
 function getMails() {
@@ -110,6 +110,62 @@ function getMails() {
     },
     {
       id: "e104",
+      status: "inbox",
+      subject: "Konnichiwa",
+      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      isRead: false,
+      isStarred: false,
+      sentAt: currentDate.getTime() / 1000,
+      from: {
+        email: "person4@gmail.com",
+        fullname: "person4",
+      },
+      to: loggedinUser
+    },
+    {
+      id: "e105",
+      status: "inbox",
+      subject: "hola",
+      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      isRead: true,
+      isStarred: false,
+      sentAt: currentDate.getTime() / 1000,
+      from: {
+        email: "person1@gmail.com",
+        fullname: "person1",
+      },
+      to: loggedinUser
+    },
+    {
+      id: "e106",
+      status: "inbox",
+      subject: "shalom",
+      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      isRead: true,
+      isStarred: false,
+      sentAt: currentDate.getTime() / 1000,
+      from: {
+        email: "person2@gmail.com",
+        fullname: "person2",
+      },
+      to: loggedinUser
+    },
+    {
+      id: "e107",
+      status: "inbox",
+      subject: "hello",
+      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      isRead: false,
+      isStarred: true,
+      sentAt: currentDate.getTime() / 1000,
+      from: {
+        email: "person3@gmail.com",
+        fullname: "person3",
+      },
+      to: loggedinUser
+    },
+    {
+      id: "e108",
       status: "inbox",
       subject: "Konnichiwa",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",

@@ -1,0 +1,11 @@
+.app-header {
+  display: flex;
+  background-color: rgb(234, 234, 234);
+  color: black;
+  padding: 0.5em;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+

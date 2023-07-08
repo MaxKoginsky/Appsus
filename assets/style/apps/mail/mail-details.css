@@ -1,0 +1,26 @@
+.mail-details {
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.mail-details .mail-details-info {
+    color: black;
+    padding: 20px;
+}
+
+.mail-details .mail-details-info .mail-details-to {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail-details .mail-details-info .mail-details-to p{
+    margin: 0;
+}
+
+@media(max-width: 850px) {
+    .mail-details-to{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,101 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mail-menu {
+    min-width: 200px;
+}
+
+.menu .menu-compose {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+
+.menu .menu-compose p {
+    margin: 0;
+}
+
+.menu .menu-tab {
+    display: flex;
+    cursor: pointer;
+    /* margin-left: 20px; */
+}
+
+.menu .menu-tab p {
+    margin: 0 0 0 10px;
+}
+
+.menu button {
+    width: 70%;
+    margin: 10px 0 0 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #bce6fc;
+}
+
+.menu button:hover {
+    box-shadow: 2px 2px 5px rgb(152, 152, 152);
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 8px;
+    margin-right: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.menu ul li:hover:not(.is-selected) {
+    background-color: lightgray;
+}
+
+.is-selected {
+    background-color: #98bef9;
+    
+}
+
+.menu .btn-close {
+    display: none;
+}
+
+@media(max-width: 850px) {
+    .mail-menu {
+        position: fixed;
+        height: 100%;
+        background-color: #e6efff;
+        box-shadow: 20px 0px 20px -20px;
+        bottom: 0;
+        width: 100%;
+        z-index: 20;
+    }
+
+    .menu-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu .btn-close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .menu-open {
+        transition: left 0.8s;
+        left: 0;
+    }
+
+    .menu-close {
+        transition: left 0.8s;
+        left: -105%;
+    }
+}

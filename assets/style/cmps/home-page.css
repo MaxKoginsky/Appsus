@@ -1,0 +1,13 @@
+.home-page{
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(214, 214, 214, 0.928);
+  text-align: center;
+  color: black;
+}
+
+@media(max-width: 720px) {
+  .app-header {
+    background-color: var(--clr4);
+    color: var(--secondary-clr2);
+  }
+}
